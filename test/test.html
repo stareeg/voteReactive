@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Test</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="test" id="block1">
+        <h1>What's the key?</h1>
+        <audio controls src="../src/audio/Korn - Porno Creep.mp3"></audio>
+        <div class="challenge" id="challenge">challenge</div>
+        <form>
+            <div class="notes">
+                <label for="select-note">Root note</label>
+                <select name="note" id="select-note">
+                    <option value="">choose root note</option>
+                    <option value="1">major</option>
+                    <option value="2">minor</option>
+                </select>
+            </div>
+            <div class="keys">
+                <label for="select-key">Key</label>
+                <select name="key" id="select-key">
+                    <option value="">choose key</option>
+                    <option value="1">A</option>
+                    <option value="2">A#</option>
+                    <option value="3">B</option>
+                    <option value="4">C</option>
+                    <option value="5">C#</option>
+                    <option value="6">D</option>
+                    <option value="7">D#</option>
+                    <option value="8">E</option>
+                    <option value="9">F</option>
+                    <option value="10">F#</option>
+                    <option value="11">G</option>
+                    <option value="12">G#</option>
+                </select>
+            </div>
+            <button class="btn" type="button" onclick="check()">Submit</button>
+        </form>
+    </div>
+    <div class="congratulations" id="block2">
+        <h1>You're right!</h1>
+        <a class="btn1" href="#" onclick="reset()">Try again!</a>
+    </div>
+    <script src="scripts/index.js"></script>
+</body>
+</html>
